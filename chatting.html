@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chatting</title>
+  </head>
+
+  <body id="blue-screen">
+    <div class="status-bar blue-screen">
+      <div class="status-bar__column">
+        <span>
+          No Service
+          <i class="fas fa-wifi"></i>
+        </span>
+      </div>
+
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+
+      <div class="status-bar__column">
+        <span>200%</span>
+        <i class="fas fa-battery-full fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <div class="chatting-bar">
+      <a href="chats.html">
+        <i class="fas fa-chevron-left fa-2x"></i>
+      </a>
+      <h1>유상빈</h1>
+      <div class="chatting-bar__right">
+        <i class="fas fa-search fa-2x"></i>
+        <i class="fas fa-bars fa-2x"></i>
+      </div>
+    </div>
+
+    <div class="main-screen margin-screen chattings-screen">
+      <div class="chatting__timestamp">Tuesday, June 30, 2021</div>
+
+      <div class="message-row">
+        <img src="kakao-image/프로필 사진.jpg" />
+        <div class="message-row__content">
+          <span class="message__name">유상빈</span>
+          <div class="message-bubble">
+            <span>안녕</span>
+            <span>21:27</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="message-row message-row--own">
+        <div class="message-row__content">
+          <div class="message-bubble">
+            <span>반가워</span>
+            <span>21:27</span>
+          </div>
+        </div>
+      </div>
+
+      <form class="message-input">
+        <div class="message-input__column">
+          <i class="far fa-plus-square fa-2x"></i>
+        </div>
+        <div class="message-input__column">
+          <input type="text" placeholder="Write your message" />
+          <i class="far fa-smile fa-lg"></i>
+          <button><i class="fas fa-arrow-up fa-lg"></i></button>
+        </div>
+      </form>
+    </div>
+
+    <div id="no-mobile">
+      <span>Your screen is too bigㅠㅠ</span>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

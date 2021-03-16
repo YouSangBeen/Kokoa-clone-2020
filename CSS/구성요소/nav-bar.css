@@ -1,0 +1,76 @@
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  padding: 20px 50px;
+  box-sizing: border-box;
+  background-color: #f1f1f1;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  
+}
+
+.nav-bar__column i {
+  color: black;
+}
+
+.nav-bar__column:nth-child(2) {
+  position: relative;
+}
+.nav-bar__1dot {
+  background-color: tomato;
+  display: flex;
+  width: 25px;
+  height: 25px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: white;
+  position: absolute;
+  left: 20px;
+  bottom: 15px;
+
+  animation: navBar1DotAnimation 2s ease-in-out infinite;
+}
+
+.nav-bar__column:nth-child(4) {
+  position: relative;
+}
+.nav-bar__dot {
+  background-color: tomato;
+  width: 5px;
+  height: 5px;
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  left: 35px;
+ }
+
+@keyframes navBar1DotAnimation {
+  0%{transform:none;}
+  50%{transform: translateY(-5px) rotateY(360deg);}
+  100%{transform:none;}
+}
+
+
+
+@keyframes navBarColumnAnimation {
+  from{transform:translateY(100px);
+  opacity:0;}
+  to{transform:none;}
+}
+
+.nav-bar__column {
+  animation: navBarColumnAnimation 0.4s ease-in-out forwards ;
+  transform: translateY(100px);
+}
+.nav-bar__column:nth-child(2){
+  animation-delay: 0.2s;
+}
+.nav-bar__column:nth-child(3){
+  animation-delay: 0.4s;
+}
+.nav-bar__column:nth-child(4){
+  animation-delay: 0.6s;
+}

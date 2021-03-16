@@ -1,0 +1,48 @@
+.screen-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.screen-header__title {
+  margin-left: 20px;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.screen-header__icons {
+  padding-right: 15px;
+}
+.screen-header__icons i {
+  margin: 0px 8px;
+}
+
+.friends-Names-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0px;
+  background-color: rgba(0, 0, 0, 0.03);
+  margin-bottom: 15px;
+}
+
+.friends-Names-display p {
+  margin-left: 5px;
+  margin-right: 10px;
+}
+
+.friends-Names-display i {
+  position: relative;
+  bottom: -1px;
+  opacity: 0.2;
+}
+
+@keyframes cogTurn {
+  from { transform:none;}
+  to {transform: rotateZ(360deg);}
+}
+
+.fa-cog:hover {
+  animation: cogTurn 1s linear infinite;
+}

@@ -1,0 +1,150 @@
+.screen-header__icons-dot {
+  display: flex;
+  width: 5px;
+  height: 5px;
+  background-color: tomato;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 20px;
+  left: 24px;
+}
+
+.cog-dot {
+  position: relative;
+}
+
+.find-icons {
+  display: flex;
+  justify-content: space-around;
+}
+.find-icons__icon-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.find-icons__icon-column span {
+  margin-top: 15px;
+  padding-bottom: 30px;
+}
+
+.recommend {
+  padding: 20px 0px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.recommend__content {
+  display: flex;
+  justify-content: center;
+  padding: 70px 0px;
+}
+.recommend__title {
+  color: rgba(0, 0, 0, 0.35);
+  font-weight: 600;
+}
+.recommend__content__center {
+  color: rgba(0, 0, 0, 0.3);
+  font-weight: 600;
+}
+
+.open-chat__column:first-child {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0px;
+  opacity: 0.5;
+}
+
+.open-chat__title {
+  font-weight: 600;
+}
+
+.open-chat__subtitle {
+  opacity: 0.5;
+}
+
+.open-chat__subtitle i {
+  opacity: 0.4;
+}
+
+.open-chat__BTS__title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.open-chat__BTS__hashtags {
+  opacity: 0.5;
+  margin-bottom: 10px;
+}
+
+.open-chat__BTS__people img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.open-chat__BTS__people {
+  display: flex;
+  align-items: center;
+}
+.open-chat__BTS__people .members {
+  opacity: 0.5;
+}
+
+.open-chat__BTS__people .divider {
+  width: 1px;
+  height: 15px;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin: 0px 7px;
+}
+.open-chat__BTS__people .active {
+  color: hotpink;
+}
+
+.open-chat__column {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.open-chat__img img {
+  height: 100px;
+  width: 100px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.open-chat__img {
+  position: relative;
+}
+.open-chat__icons {
+  padding: 5px 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 30px;
+  color: white;
+  position: absolute;
+  bottom: 8px;
+  left: 35px;
+  font-size: 13px;
+}
+
+.open-chat {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 15px;
+}
+
+@keyframes heartBeatAnimation {
+  0%{color:white;
+  transform:none}
+  50%{color:tomato;
+  transform: scale(2);}
+  100%{color:white;
+  transform: none;}
+}
+
+.open-chat__icons:hover .fa-heart {
+  animation: heartBeatAnimation 1s linear infinite;
+  will-change: transform;
+  
+}

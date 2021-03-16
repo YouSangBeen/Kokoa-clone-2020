@@ -1,0 +1,19 @@
+.head-bar {
+  display: flex;
+
+  align-items: center;
+  padding: 0px 20px;
+}
+
+.head-bar a {
+  margin-right: auto;
+}
+
+.head-bar .icons-right {
+  margin-left: auto;
+}
+
+.head-bar h1 {
+  font-size: 30px;
+  font-weight: 600;
+}
